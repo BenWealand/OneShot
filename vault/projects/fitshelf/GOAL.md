@@ -1,20 +1,31 @@
 # FitShelf Goal
 
-Before executing the project, inspect and follow the OneShot repository structure and conventions, including:
-- SYSTEM.md
-- AGENTS.md
-- skills/
-- vault/
-- existing orchestration patterns
-- existing workflow/documentation conventions
+Use:
+- `skills/orchestrator-lite.md`
+- OneShot vault structure
+- project files
+- phase tracking
+- proof logs
+- blocker logs
+- resume logs
 
-Use the OneShot methodology for:
-- planning
-- ticket execution
-- resumability
-- proof logging
-- blocker tracking
-- autonomous continuation
+Do NOT use full OneShot multi-agent orchestration.
+
+## Execution Mode
+
+Use SINGLE-SESSION MODE ONLY.
+
+Do not spawn:
+- subagents
+- workers
+- Mill
+- executor agents
+- delegated task agents
+- separate reviewer agents
+
+The current Codex session must execute all work inline.
+
+## Source Files
 
 Read:
 - PROJECT.md
@@ -23,82 +34,13 @@ Read:
 - PLAN.md
 - TICKETS.md
 
-Then execute the project using the OneShot workflow.
+Do not rewrite these files.
 
----
+## Main Objective
 
-# Main Objective
+Execute the FitShelf AI Try-On project phase by phase.
 
-Build a working Expo React Native + Supabase MVP for FitShelf.
+The first critical milestone is:
 
----
-
-# Required MVP Features
-
-- auth
-- mannequin upload
-- clothing upload
-- clothing library
-- outfit builder
-- drag/scale/rotate
-- save/load outfits
-
----
-
-# Important Constraint
-
-Do NOT attempt advanced AI try-on in V1.
-
-Build the practical reusable mannequin layering system first.
-
----
-
-# Behavior Rules
-
-Work autonomously.
-
-Do not stop after:
-- planning
-- scaffolding
-- one ticket
-
-Continue to next ticket automatically.
-
----
-
-# If Blocked
-
-If credentials are missing:
-- continue building everything possible
-- create env examples
-- document blockers
-
-If packages fail:
-- attempt reasonable fixes
-- choose simpler alternative if needed
-
-If gestures fail:
-- use sliders/buttons fallback
-
----
-
-# Required Project Files
-
-Maintain:
-- STATUS.md
-- DECISIONS.md
-- BLOCKERS.md
-- PROOF.md
-- RESUME.md
-
----
-
-# Definition of Done
-
-Project is done when:
-- app exists
-- core loop works
-- setup docs exist
-- proof logs exist
-- blockers documented
-- resume instructions exist
+```bash
+python ai/scripts/run_tryon.py --person ai/samples/person.jpg --garment ai/samples/garment.jpg --category upper --out ai/outputs/result.jpg

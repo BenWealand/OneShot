@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "FitShelf",
+    "slug": "fitshelf",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "FitShelf uses your photo library to select mannequin and clothing images."
+      }
+    },
+    "android": {
+      "permissions": ["READ_MEDIA_IMAGES", "READ_EXTERNAL_STORAGE"]
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
