@@ -1,5 +1,21 @@
 # FitShelf Goal
 
+Before executing the project, inspect and follow the OneShot repository structure and conventions, including:
+- SYSTEM.md
+- AGENTS.md
+- skills/
+- vault/
+- existing orchestration patterns
+- existing workflow/documentation conventions
+
+Use the OneShot methodology for:
+- planning
+- ticket execution
+- resumability
+- proof logging
+- blocker tracking
+- autonomous continuation
+
 Read:
 - PROJECT.md
 - PRODUCT_SPEC.md
