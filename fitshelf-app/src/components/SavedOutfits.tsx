@@ -12,7 +12,7 @@ export function SavedOutfits({ outfits, activeOutfitId, onLoad, onNew }: Props) 
   return (
     <View style={styles.wrap}>
       <View style={styles.header}>
-        <Text style={styles.heading}>Saved Outfits</Text>
+        <Text style={styles.heading}>Manual Drafts</Text>
         <Pressable style={styles.newButton} onPress={onNew}>
           <Text style={styles.newText}>New</Text>
         </Pressable>
@@ -21,7 +21,7 @@ export function SavedOutfits({ outfits, activeOutfitId, onLoad, onNew }: Props) 
         horizontal
         data={outfits}
         keyExtractor={(item) => item.id}
-        ListEmptyComponent={<Text style={styles.empty}>Saved outfits will appear here.</Text>}
+        ListEmptyComponent={<Text style={styles.empty}>Saved manual drafts will appear here.</Text>}
         renderItem={({ item }) => (
           <Pressable style={[styles.outfit, item.id === activeOutfitId && styles.active]} onPress={() => onLoad(item)}>
             <Text numberOfLines={1} style={styles.name}>{item.name}</Text>

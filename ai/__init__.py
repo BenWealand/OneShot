@@ -1,0 +1,1 @@
+"""FitShelf local AI package."""

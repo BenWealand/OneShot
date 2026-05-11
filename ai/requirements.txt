@@ -1,0 +1,14 @@
+pillow>=10.0
+numpy>=1.24
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+requests>=2.31
+beautifulsoup4>=4.12
+
+# Optional runtime integrations:
+# opencv-python>=4.9
+# rembg>=2.0
+# mediapipe>=0.10
+# redis>=5.0
+# rq>=1.16

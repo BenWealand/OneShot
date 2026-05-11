@@ -49,3 +49,6 @@ oneshot = "oneshot:main"
 
 [tool.setuptools]
 py-modules = ["oneshot"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

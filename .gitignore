@@ -51,6 +51,9 @@ proof/
 .ruff_cache/
 .mypy_cache/
 .venv/
+ai/.venv-catvton/
+ai/models/
+ai/outputs/
 venv/
 
 node_modules/
